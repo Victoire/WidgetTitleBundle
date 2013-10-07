@@ -1,0 +1,21 @@
+{% block body %}
+
+{#
+   _   _   _   _   _   _   _
+  / \ / \ / \ / \ / \ / \ / \
+ ( C ) o ) m ) m ) o ) n ) s )
+  \_/ \_/ \_/ \_/ \_/ \_/ \_/
+
+#}
+{% block form %}
+<form class="ajax" update="widget-{{id}}" method="POST" action="{{path('victoire_cms_widget_edit', {'id':id, 'type':'title'} )}}">
+{#Booya ! Replace this default rendering by your own form#}
+{{form_row(form)}}
+{{form_rest(form)}}
+{% block submit %}
+<input type="submit" value="OK" />
+{% endblock submit %}
+</form>
+{% endblock form %}
+
+{% endblock body %}

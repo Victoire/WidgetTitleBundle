@@ -1,0 +1,7 @@
+services:
+    victoire_cms.twig.widget_title_manager:
+        class: Victoire\TitleBundle\Widget\Manager\WidgetTitleManager
+        arguments: [@service_container]
+
+    widget_title_manager:
+        alias: victoire_cms.twig.widget_title_manager

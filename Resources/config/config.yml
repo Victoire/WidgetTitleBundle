@@ -1,0 +1,5 @@
+victoire_cms:
+    widgets:
+        title:
+            class: "Victoire\TitleBundle\\Entity\\WidgetTitle"
+            name: title
