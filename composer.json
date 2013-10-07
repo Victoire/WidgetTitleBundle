@@ -1,0 +1,34 @@
+{
+    "name": "victoire/title-bundle",
+    "type": "symfony-bundle",
+    "description": "Victoire Cms Title component",
+    "keywords": ["cms", "victoire", "title"],
+    "homepage": "http://appventus.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Andrieux",
+            "email": "paul@appventus.com"
+        }
+    ],
+    "require": {
+        "php"                                 : ">=5.3.3",
+        "symfony/framework-bundle"            : "~2.3",
+
+        "victoire/cms-bundle"                : "1.0.*@dev",
+        "victoire/text-bundle"               : "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-0": { "Victoire\\CmsBundle": "" }
+    },
+    "minimum-stability": "dev",
+
+
+    "target-dir": "Victoire/TitleBundle",
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
