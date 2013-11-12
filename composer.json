@@ -19,7 +19,7 @@
         "victoire/text-bundle"               : "1.0.*@dev"
     },
     "autoload": {
-        "psr-0": { "Victoire\\CmsBundle": "" }
+        "psr-0": { "Victoire\\TitleBundle": "" }
     },
     "minimum-stability": "dev",
 

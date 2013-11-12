@@ -43,6 +43,6 @@ class WidgetTitleType extends AbstractType
      */
     public function getName()
     {
-        return 'appventus_venatorcmsbundle_widgettitletype';
+        return 'appventus_victoirecmsbundle_widgettitletype';
     }
 }
