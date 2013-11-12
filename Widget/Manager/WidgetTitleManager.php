@@ -71,9 +71,9 @@ protected $container;
      * @param WidgetTitle $widget
      * @return $form
      */
-    public function buildForm($widget)
+    public function buildForm($widget, $entityName = null, $namespace = null)
     {
-        $form = $this->container->get('form.factory')->create(new WidgetTitleType(), $widget);
+        $form = $this->container->get('form.factory')->create(new WidgetTitleType($entityName, $namespace), $widget);
 
         return $form;
     }
