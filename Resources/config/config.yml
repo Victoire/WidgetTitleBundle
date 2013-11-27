@@ -3,3 +3,9 @@ victoire_cms:
         title:
             class: "Victoire\TitleBundle\\Entity\\WidgetTitle"
             name: title
+
+jms_translation:
+    configs:
+        victoire_title_bundle:
+            dirs: ["@VictoireTitleBundle"]
+            output_dir: "@VictoireTitleBundle/Resources/translations"
