@@ -20,9 +20,7 @@ class WidgetTitleType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder
-                            ->add('content')
-                    ;
+        $builder->add('content');
     }
 
 
@@ -33,7 +31,8 @@ class WidgetTitleType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Victoire\TitleBundle\Entity\WidgetTitle'
+            'data_class'         => 'Victoire\TitleBundle\Entity\WidgetTitle',
+            'translation_domain' => 'victoire'
         ));
     }
 

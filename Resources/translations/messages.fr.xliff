@@ -16,10 +16,6 @@
         <target state="new">Ok</target>
         <jms:reference-file line="17">Widget/title/new.html.twig</jms:reference-file>
       </trans-unit>
-      <trans-unit id="139533c135822eff05328da6a82715ea0593567b" resname="widget.title.new.action.label">
-        <source>widget.title.new.action.label</source>
-        <target>Titre</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>

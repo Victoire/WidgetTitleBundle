@@ -44,7 +44,7 @@ protected $container;
     public function render($widget)
     {
         return $this->container->get('victoire_templating')->render(
-            "VictoireTitleBundle:Widget:title/show.html.twig",
+            "VictoireTitleBundle::show.html.twig",
             array(
                 "widget" => $widget
             )
@@ -61,7 +61,7 @@ protected $container;
     {
 
         return $this->container->get('victoire_templating')->render(
-            "VictoireTitleBundle:Widget:title/edit.html.twig",
+            "VictoireTitleBundle::edit.html.twig",
             array("widget" => $widget, 'form' => $form->createView(), 'id' => $widget->getId())
         );
     }
@@ -91,7 +91,7 @@ protected $container;
     {
 
         return $this->container->get('victoire_templating')->render(
-            "VictoireTitleBundle:Widget:title/new.html.twig",
+            "VictoireTitleBundle::new.html.twig",
             array(
                 "widget" => $widget,
                 'form' => $form->createView(),
