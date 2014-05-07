@@ -1,4 +1,4 @@
-victoire_cms:
+victoire_core:
     widgets:
         title:
             class: "Victoire\TitleBundle\\Entity\\WidgetTitle"

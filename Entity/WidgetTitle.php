@@ -2,7 +2,7 @@
 namespace Victoire\TitleBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\CmsBundle\Entity\Widget;
+use Victoire\Bundle\CoreBundle\Entity\Widget;
 use Victoire\TextBundle\Entity\WidgetText;
 
 /**
@@ -13,5 +13,5 @@ use Victoire\TextBundle\Entity\WidgetText;
  */
 class WidgetTitle extends WidgetText
 {
-    use \Victoire\CmsBundle\Entity\Traits\WidgetTrait;
+    use \Victoire\Bundle\CoreBundle\Entity\Traits\WidgetTrait;
 }
