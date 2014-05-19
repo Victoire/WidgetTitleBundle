@@ -12,7 +12,7 @@
 {% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
 
 {% block content %}
-<h{{ widget.headingLevel }}>{{widget.content}}</h{{ widget.headingLevel }}>
+<h{{ widget.headingLevel }}>{{ widget.content|nl2br }}</h{{ widget.headingLevel }}>
 {% endblock content %}
 </div>
 
