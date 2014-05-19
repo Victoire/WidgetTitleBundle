@@ -12,13 +12,7 @@
 {% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
 
 {% block content %}
-{#Booya ! Replace this default rendering by your own logic#}
-<ul>
-    <li>
-        {{widget.content}}
-    </li>
-</ul>
-{#Enjoy !#}
+<h{{ widget.headingLevel }}>{{widget.content}}</h{{ widget.headingLevel }}>
 {% endblock content %}
 </div>
 

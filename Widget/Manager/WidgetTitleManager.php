@@ -2,11 +2,14 @@
 
 namespace Victoire\TitleBundle\Widget\Manager;
 
-
 use Victoire\TitleBundle\Form\WidgetTitleType;
 use Victoire\TitleBundle\Entity\WidgetTitle;
+use Victoire\Bundle\CoreBundle\Widget\Managers\ManagerInterface;
 
-class WidgetTitleManager
+/**
+ * CRUD operations on WidgetTitle Widget
+ */
+class WidgetTitleManager implements ManagerInterface
 {
 protected $container;
 
@@ -31,7 +34,7 @@ protected $container;
     {
         $widget = new WidgetTitle();
         $widget->setPage($page);
-        $widget->setslot($slot);
+        $widget->setSlot($slot);
 
         return $widget;
     }
@@ -54,21 +57,28 @@ protected $container;
     /**
      * render WidgetTitle form
      * @param Form           $form
-     * @param WidgetTitle $widget
+     * @param WidgetTitle    $widget
+     * @param BusinessEntity $entity
      * @return form
      */
-    public function renderForm($form, $widget)
+    public function renderForm($form, $widget, $entity = null)
     {
-
         return $this->container->get('victoire_templating')->render(
             "VictoireTitleBundle::edit.html.twig",
-            array("widget" => $widget, 'form' => $form->createView(), 'id' => $widget->getId())
+            array(
+                "widget" => $widget,
+                'form'   => $form->createView(),
+                'id'     => $widget->getId(),
+                'entity' => $entity
+            )
         );
     }
 
     /**
      * create a form with given widget
      * @param WidgetTitle $widget
+     * @param string         $entityName
+     * @param string         $namespace
      * @return $form
      */
     public function buildForm($widget, $entityName = null, $namespace = null)
@@ -84,21 +94,29 @@ protected $container;
      * @param WidgetTitle $widget
      * @param string         $slot
      * @param Page           $page
+     * @param string         $entity
      *
      * @return new form
      */
-    public function renderNewForm($form, $widget, $slot, $page)
+    public function renderNewForm($form, $widget, $slot, $page, $entity = null)
     {
 
         return $this->container->get('victoire_templating')->render(
             "VictoireTitleBundle::new.html.twig",
             array(
-                "widget" => $widget,
-                'form' => $form->createView(),
-                "slot" => $slot,
+                "widget"          => $widget,
+                'form'            => $form->createView(),
+                "slot"            => $slot,
+                "entity"          => $entity,
                 "renderContainer" => true,
-                "page" => $page
+                "page"            => $page
             )
         );
     }
+
+    public function getWidgetName()
+    {
+        return 'redactor';
+    }
+
 }

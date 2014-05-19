@@ -8,7 +8,11 @@
     <body>
       <trans-unit resname="widget.titre.new.action.label">
         <source>widget.titre.new.action.label</source>
-        <target state="new">Texte riche</target>
+        <target state="new">Titre</target>
+      </trans-unit>
+      <trans-unit resname="widget.title.new.action.label">
+        <source>widget.title.new.action.label</source>
+        <target>Titre</target>
       </trans-unit>
     </body>
   </file>

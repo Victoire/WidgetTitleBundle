@@ -5,12 +5,13 @@ namespace Victoire\TitleBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 
 /**
  * WidgetTitle form type
  */
-class WidgetTitleType extends AbstractType
+class WidgetTitleType extends WidgetType
 {
 
     /**
@@ -20,7 +21,19 @@ class WidgetTitleType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('content');
+        $builder
+            ->add('content')
+            ->add('headingLevel', 'choice', array(
+                    'choices' => array(
+                        '1' => 'H1',
+                        '2' => 'H2',
+                        '3' => 'H3',
+                        '4' => 'H4',
+                        '5' => 'H5',
+                        '6' => 'H6'
+                    )
+                )
+            );
     }
 
 
