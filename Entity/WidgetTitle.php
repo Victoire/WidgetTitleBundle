@@ -14,8 +14,6 @@ use Victoire\Bundle\CoreBundle\Annotations as VIC;
  */
 class WidgetTitle extends WidgetText
 {
-    use \Victoire\Bundle\CoreBundle\Entity\Traits\WidgetTrait;
-
     /**
      * @var text
      *
