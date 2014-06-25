@@ -3,7 +3,7 @@ namespace Victoire\TitleBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\CoreBundle\Entity\Widget;
-use Victoire\TextBundle\Entity\WidgetText;
+use Victoire\Widget\TextBundle\Entity\WidgetText;
 use Victoire\Bundle\CoreBundle\Annotations as VIC;
 
 /**
