@@ -1,17 +1,12 @@
 <?php
 
-namespace Victoire\TitleBundle\Form;
+namespace Victoire\Widget\TitleBundle\Form;
 
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Victoire\Bundle\CoreBundle\Form\WidgetType;
+use Victoire\Widget\TextBundle\Form\WidgetTextType;
 
-
-/**
- * WidgetTitle form type
- */
-class WidgetTitleType extends WidgetType
+class WidgetTitleType extends WidgetTextType
 {
 
     /**
@@ -21,40 +16,57 @@ class WidgetTitleType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder
-            ->add('content')
-            ->add('headingLevel', 'choice', array(
-                    'choices' => array(
-                        '1' => 'H1',
-                        '2' => 'H2',
-                        '3' => 'H3',
-                        '4' => 'H4',
-                        '5' => 'H5',
-                        '6' => 'H6'
-                    )
-                )
-            );
+
+        $builder->add('headingLevel', 'choice', array(
+            'choices' => array(
+                'h1' => 'H1',
+                'h2' => 'H2',
+                'h3' => 'H3',
+                'h4' => 'H4',
+                'h5' => 'H5',
+                'h6' => 'H6'
+            ),
+            'label' => 'widget_text.form.headingLevel.label'
+        ));
+
+        $builder->add('headingStyle', 'choice', array(
+            'label' => 'widget_text.form.headingStyle.label',
+            'required' => false,
+            'empty_value' => 'Défault',
+            'choices' => array(
+                'h1' => 'H1',
+                'h2' => 'H2',
+                'h3' => 'H3',
+                'h4' => 'H4',
+                'h5' => 'H5',
+                'h6' => 'H6'
+            ),
+        ));
+        parent::buildForm($builder, $options);
     }
 
-
     /**
-     * bind form to WidgetRedactor entity
+     * bind form to WidgetText entity
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
+        parent::setDefaultOptions($resolver);
+
         $resolver->setDefaults(array(
-            'data_class'         => 'Victoire\TitleBundle\Entity\WidgetTitle',
+            'data_class'         => 'Victoire\Widget\TitleBundle\Entity\WidgetTitle',
+            'widget'             => 'text',
             'translation_domain' => 'victoire'
         ));
     }
 
-
     /**
      * get form name
+     *
+     * @return string The form name
      */
     public function getName()
     {
-        return 'appventus_victoirecorebundle_widgettitletype';
+        return 'victoire_widget_form_title';
     }
 }

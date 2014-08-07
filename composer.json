@@ -2,7 +2,7 @@
     "name": "victoire/title-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms Title component",
-    "keywords": ["cms", "victoire", "title"],
+    "keywords": ["cms", "victoire", "title", "widget"],
     "homepage": "http://appventus.com",
     "license": "MIT",
     "authors": [

@@ -1,11 +1,12 @@
 victoire_core:
     widgets:
-        title:
-            class: "Victoire\TitleBundle\\Entity\\WidgetTitle"
-            name: title
+        Title:
+            class: "Victoire\\Widget\\TitleBundle\\Entity\\WidgetTitle"
+            name: Title
+            parent: Text
 
 jms_translation:
-    configs:
+   configs:
         victoire_title_bundle:
-            dirs: ["@VictoireTitleBundle"]
-            output_dir: "@VictoireTitleBundle/Resources/translations"
+            dirs: ["@VictoireWidgetTitleBundle"]
+            output_dir: "@VictoireWidgetTitleBundle/Resources/translations"

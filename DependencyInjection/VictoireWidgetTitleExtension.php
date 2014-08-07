@@ -1,6 +1,6 @@
 <?php
 
-namespace Victoire\TitleBundle\DependencyInjection;
+namespace Victoire\Widget\TitleBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class VictoireTitleExtension extends Extension
+class VictoireWidgetTitleExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -24,5 +24,9 @@ class VictoireTitleExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+        foreach ($config as $key => $value) {
+            $container->setParameter('victoire_title.'.$key, $value);
+        }
+
     }
 }
