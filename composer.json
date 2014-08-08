@@ -22,8 +22,8 @@
         "victoire/text-widget"                : "~0.1"
     },
     "autoload": {
-        "psr-0": { "Victoire\\TitleBundle": "" }
+        "psr-0": { "Victoire\\Widget\\TitleBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/TitleBundle"
+    "target-dir": "Victoire/Widget/TitleBundle"
 }
