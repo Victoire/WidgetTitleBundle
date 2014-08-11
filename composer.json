@@ -2,7 +2,7 @@
     "name": "victoire/title-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms Title component",
-    "keywords": ["cms", "victoire", "title"],
+    "keywords": ["cms", "victoire", "title", "widget"],
     "homepage": "http://appventus.com",
     "license": "MIT",
     "authors": [
@@ -22,8 +22,8 @@
         "victoire/text-widget"                : "~0.1"
     },
     "autoload": {
-        "psr-0": { "Victoire\\TitleBundle": "" }
+        "psr-0": { "Victoire\\Widget\\TitleBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/TitleBundle"
+    "target-dir": "Victoire/Widget/TitleBundle"
 }

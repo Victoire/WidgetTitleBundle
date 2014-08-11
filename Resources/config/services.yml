@@ -1,7 +1,13 @@
 services:
-    victoire_core.twig.widget_title_manager:
-        class: Victoire\TitleBundle\Widget\Manager\WidgetTitleManager
-        arguments: [@service_container]
-
-    widget_title_manager:
-        alias: victoire_core.twig.widget_title_manager
+    victoire_core.widget_title_content_resolver:
+        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: Title }
+    #alias to the entity
+    victoire.widget.title:
+        class: Victoire\Widget\TitleBundle\Entity\WidgetTitle
+    #alias to the form
+    victoire.widget.form.title:
+        class: Victoire\Widget\TitleBundle\Form\WidgetTitleType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_title}

@@ -1,19 +1,8 @@
-{% block body %}
+{% extends 'VictoireWidgetTextBundle::show.html.twig' %}
 
-{#
-   _   _   _   _   _   _   _
-  / \ / \ / \ / \ / \ / \ / \
- ( C ) o ) m ) m ) o ) n ) s )
-  \_/ \_/ \_/ \_/ \_/ \_/ \_/
-
-#}
-
-<div class="vic-widget" id="widget-{{widget.id}}">
-{% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
 
 {% block content %}
-<h{{ widget.headingLevel }}>{{ widget.content|nl2br }}</h{{ widget.headingLevel }}>
+    <{{headingLevel}} class="{{headingStyle ?: headingLevel}}">{{content}}</{{headingLevel}}>
 {% endblock content %}
-</div>
 
-{% endblock body %}
+
