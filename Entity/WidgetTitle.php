@@ -9,7 +9,7 @@ use Victoire\Bundle\CoreBundle\Annotations as VIC;
 /**
  * WidgetTitle
  *
- * @ORM\Table("cms_widget_title")
+ * @ORM\Table("vic_widget_title")
  * @ORM\Entity
  */
 class WidgetTitle extends WidgetText
@@ -25,7 +25,7 @@ class WidgetTitle extends WidgetText
     /**
      * Set headingLevel
      *
-     * @param string $headingLevel
+     * @param  string       $headingLevel
      * @return headingLevel
      */
     public function setHeadingLevel($headingLevel)
