@@ -54,7 +54,7 @@ class WidgetTitleType extends WidgetTextType
 
         $resolver->setDefaults(array(
             'data_class'         => 'Victoire\Widget\TitleBundle\Entity\WidgetTitle',
-            'widget'             => 'text',
+            'widget'             => 'Title',
             'translation_domain' => 'victoire'
         ));
     }
