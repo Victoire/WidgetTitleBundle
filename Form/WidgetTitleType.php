@@ -31,7 +31,6 @@ class WidgetTitleType extends WidgetTextType
 
         $builder->add('headingStyle', 'choice', array(
             'label' => 'widget_text.form.headingStyle.label',
-            'required' => false,
             'empty_value' => 'Défault',
             'choices' => array(
                 'h1' => 'H1',

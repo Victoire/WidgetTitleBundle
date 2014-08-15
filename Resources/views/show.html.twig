@@ -2,7 +2,7 @@
 
 
 {% block content %}
-    <{{headingLevel}} class="{{headingStyle ?: headingLevel}}">{{content}}</{{headingLevel}}>
+    {{ ('<' ~ headingLevel ~ ' class="' ~ headingStyle ~ '">' ~ content|nl2br ~ '</' ~ headingLevel ~ '>')|raw }}
 {% endblock content %}
 
 
