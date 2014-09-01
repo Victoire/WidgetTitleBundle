@@ -22,6 +22,22 @@
         <source>widget_text.form.headingStyle.label</source>
         <target>Style</target>
       </trans-unit>
+      <trans-unit resname="widget_text.form.align.label">
+        <source>widget_text.form.align.label</source>
+        <target>Alignement</target>
+      </trans-unit>
+      <trans-unit resname="widget_text.form.align.choice.left">
+        <source>widget_text.form.align.choice.left</source>
+        <target>Normal (à gauche)</target>
+      </trans-unit>
+      <trans-unit resname="widget_text.form.align.choice.center">
+        <source>widget_text.form.align.choice.center</source>
+        <target>Centré</target>
+      </trans-unit>
+      <trans-unit resname="widget_text.form.align.choice.right">
+        <source>widget_text.form.align.choice.right</source>
+        <target>Férré à droite</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

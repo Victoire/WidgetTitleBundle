@@ -27,9 +27,8 @@ class WidgetTitleType extends WidgetTextType
                 'h6' => 'H6'
             ),
             'label' => 'widget_text.form.headingLevel.label'
-        ));
-
-        $builder->add('headingStyle', 'choice', array(
+        ))
+        ->add('headingStyle', 'choice', array(
             'label' => 'widget_text.form.headingStyle.label',
             'empty_value' => 'Défault',
             'choices' => array(
@@ -39,6 +38,14 @@ class WidgetTitleType extends WidgetTextType
                 'h4' => 'H4',
                 'h5' => 'H5',
                 'h6' => 'H6'
+            ),
+        ))
+        ->add('align', 'choice', array(
+            'label' => 'widget_text.form.align.label',
+            'choices' => array(
+                'left' => 'widget_text.form.align.choice.left',
+                'center' => 'widget_text.form.align.choice.center',
+                'right' => 'widget_text.form.align.choice.right'
             ),
         ));
         parent::buildForm($builder, $options);

@@ -29,6 +29,13 @@ class WidgetTitle extends WidgetText
     protected $headingStyle;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="align", type="string", length=255, nullable=true)
+     */
+    protected $align;
+
+    /**
      * To String function
      * Used in render choices type (Especially in VictoireThemeRenderBundle)
      * @todo Check the generated value and make it more consistent
@@ -37,7 +44,7 @@ class WidgetTitle extends WidgetText
      */
     public function __toString()
     {
-        return '#'.$this->id.' - '.$this->id;
+        return 'Titre #'.$this->id. ' - '.$this->getContent();
     }
 
     /**
@@ -65,8 +72,9 @@ class WidgetTitle extends WidgetText
 
     /**
      * Set headingStyle
-     *
      * @param string $headingStyle The value to set to headingStyle
+     *
+     * @return WidgetTitle
      */
     public function setHeadingstyle($headingStyle)
     {
@@ -83,5 +91,28 @@ class WidgetTitle extends WidgetText
     public function getHeadingstyle()
     {
         return $this->headingStyle;
+    }
+
+    /**
+     * Get align
+     *
+     * @return string
+     */
+    public function getAlign()
+    {
+        return $this->align;
+    }
+
+    /**
+     * Set align
+     * @param string $align
+     *
+     * @return WidgetTitle
+     */
+    public function setAlign($align)
+    {
+        $this->align = $align;
+
+        return $this;
     }
 }
