@@ -14,28 +14,28 @@
         <source>modal.form.widget.type.title.label</source>
         <target>Titre</target>
       </trans-unit>
-      <trans-unit resname="widget_text.form.headingLevel.label">
-        <source>widget_text.form.headingLevel.label</source>
+      <trans-unit resname="widget_title.form.headingLevel.label">
+        <source>widget_title.form.headingLevel.label</source>
         <target>Niveau sémantique</target>
       </trans-unit>
-      <trans-unit resname="widget_text.form.headingStyle.label">
-        <source>widget_text.form.headingStyle.label</source>
+      <trans-unit resname="widget_title.form.headingStyle.label">
+        <source>widget_title.form.headingStyle.label</source>
         <target>Style</target>
       </trans-unit>
-      <trans-unit resname="widget_text.form.align.label">
-        <source>widget_text.form.align.label</source>
+      <trans-unit resname="widget_title.form.align.label">
+        <source>widget_title.form.align.label</source>
         <target>Alignement</target>
       </trans-unit>
-      <trans-unit resname="widget_text.form.align.choice.left">
-        <source>widget_text.form.align.choice.left</source>
+      <trans-unit resname="widget_title.form.align.choice.left">
+        <source>widget_title.form.align.choice.left</source>
         <target>Normal (à gauche)</target>
       </trans-unit>
-      <trans-unit resname="widget_text.form.align.choice.center">
-        <source>widget_text.form.align.choice.center</source>
+      <trans-unit resname="widget_title.form.align.choice.center">
+        <source>widget_title.form.align.choice.center</source>
         <target>Centré</target>
       </trans-unit>
-      <trans-unit resname="widget_text.form.align.choice.right">
-        <source>widget_text.form.align.choice.right</source>
+      <trans-unit resname="widget_title.form.align.choice.right">
+        <source>widget_title.form.align.choice.right</source>
         <target>Férré à droite</target>
       </trans-unit>
     </body>
