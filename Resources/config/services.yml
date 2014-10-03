@@ -1,6 +1,6 @@
 services:
     victoire_core.widget_title_content_resolver:
-        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        parent: victoire_core.widget_text_content_resolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Title }
     #alias to the entity
