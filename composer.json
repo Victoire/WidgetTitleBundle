@@ -1,5 +1,5 @@
 {
-    "name": "victoire/title-widget",
+    "name": "appventus/title-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms Title component",
     "keywords": ["cms", "victoire", "title", "widget"],
