@@ -16,10 +16,10 @@
         }
     ],
     "require": {
-        "php"                       : ">=5.3.3",
-        "symfony/framework-bundle"  : "~2.3",
-        "victoire/victoire"         : ">=0.1.4",
-        "friendsofvictoire/text-widget"     : "~0.1"
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "~2.3",
+        "victoire/victoire": ">=0.1.4",
+        "friendsofvictoire/text-widget": "~0.1"
     },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\TitleBundle": "" }
