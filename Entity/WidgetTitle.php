@@ -29,6 +29,7 @@ class WidgetTitle extends WidgetText
     protected $headingStyle;
 
     /**
+     * @deprecated This should not be used anymore, use instead the WidgetStylize Trait
      * @var string
      *
      * @ORM\Column(name="align", type="string", length=255, nullable=true)
@@ -95,6 +96,7 @@ class WidgetTitle extends WidgetText
 
     /**
      * Get align
+     * @deprecated This should not be used anymore, use instead the WidgetStylize Trait
      *
      * @return string
      */
@@ -105,6 +107,7 @@ class WidgetTitle extends WidgetText
 
     /**
      * Set align
+     * @deprecated This should not be used anymore, use instead the WidgetStylize Trait
      * @param string $align
      *
      * @return WidgetTitle
