@@ -1,1 +1,40 @@
 {% extends 'VictoireWidgetTextBundle::new.html.twig' %}
+
+{% block form_static %}
+    <div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane {% if form.mode.vars.data == widget.mode %}vic-active{% endif %}">
+        {{ form_start(form) }}
+        <div class="row">
+            <div class="col-md-8">
+                {{ form_row(form.content) }}
+                {{ form_widget(form.asynchronous) }}
+            </div>
+            <div class="col-md-4">
+                {{ form_row(form.headingLevel) }}
+                {{ form_row(form.headingStyle) }}
+            </div>
+            {{form_rest(form)}}
+        </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock form_static %}
+
+{% block form_entity %}
+    <div id="picker-{{ entity|lower }}-{{ form.mode.vars.data }}" class="vic-tab-pane vic-mode-{{ widget.mode }} {% if form.mode.vars.data == widget.mode %}vic-active{% endif %}">
+        {{ form_start(form) }}
+            <div class="row">
+                <div class="vic-col-md-8">
+                    {{ form_widget(form.fields) }}
+                    {% if form.entity_proxy is defined %}
+                        {{ form_widget(form.entity_proxy) }}
+                    {% endif %}
+                    {{ form_widget(form.asynchronous) }}
+                </div>
+                <div class="vic-col-md-4">
+                    {{ form_row(form.headingLevel) }}
+                    {{ form_row(form.headingStyle) }}
+                </div>
+                {{form_rest(form)}}
+            </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock form_entity %}

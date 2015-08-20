@@ -2,7 +2,7 @@
 
 
 {% block content %}
-    {{ ('<' ~ headingLevel ~ ' class="' ~ headingStyle|default(headingLevel)  ~ ' text-' ~ align ~ '">' ~ content|raw|nl2br ~ '</' ~ headingLevel ~ '>')|raw }}
+    {{ ('<' ~ headingLevel ~ ' class="' ~ headingStyle|default(headingLevel)  ~ '">' ~ content|raw|nl2br ~ '</' ~ headingLevel ~ '>')|raw }}
 {% endblock content %}
 
 
