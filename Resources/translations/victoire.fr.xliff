@@ -22,21 +22,9 @@
         <source>widget_title.form.headingStyle.label</source>
         <target>Style</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.align.label">
-        <source>widget_title.form.align.label</source>
-        <target>Alignement</target>
-      </trans-unit>
-      <trans-unit resname="widget_title.form.align.choice.left">
-        <source>widget_title.form.align.choice.left</source>
-        <target>Normal (à gauche)</target>
-      </trans-unit>
-      <trans-unit resname="widget_title.form.align.choice.center">
-        <source>widget_title.form.align.choice.center</source>
-        <target>Centré</target>
-      </trans-unit>
-      <trans-unit resname="widget_title.form.align.choice.right">
-        <source>widget_title.form.align.choice.right</source>
-        <target>Férré à droite</target>
+      <trans-unit resname="widget_title.form.content.label">
+        <source>widget_title.form.content.label</source>
+        <target>Proprieté utilisée pour représenter le titre</target>
       </trans-unit>
     </body>
   </file>

@@ -14,6 +14,18 @@
         <source>modal.form.widget.type.textTitle.label</source>
         <target>Text Title</target>
       </trans-unit>
+      <trans-unit resname="widget_title.form.headingLevel.label">
+        <source>widget_title.form.headingLevel.label</source>
+        <target>Semantical level</target>
+      </trans-unit>
+      <trans-unit resname="widget_title.form.headingStyle.label">
+        <source>widget_title.form.headingStyle.label</source>
+        <target>Style level</target>
+      </trans-unit>
+      <trans-unit resname="widget_title.form.content.label">
+        <source>widget_title.form.content.label</source>
+        <target>Property to render</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
