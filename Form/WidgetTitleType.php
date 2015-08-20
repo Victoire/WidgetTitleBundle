@@ -39,14 +39,6 @@ class WidgetTitleType extends WidgetTextType
                 'h5' => 'H5',
                 'h6' => 'H6'
             ),
-        ))
-        ->add('align', 'choice', array(
-            'label' => 'widget_title.form.align.label',
-            'choices' => array(
-                'left' => 'widget_title.form.align.choice.left',
-                'center' => 'widget_title.form.align.choice.center',
-                'right' => 'widget_title.form.align.choice.right'
-            ),
         ));
         parent::buildForm($builder, $options);
     }
