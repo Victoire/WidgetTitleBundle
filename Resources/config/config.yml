@@ -10,3 +10,11 @@ jms_translation:
         victoire_title_bundle:
             dirs: ["@VictoireWidgetTitleBundle"]
             output_dir: "@VictoireWidgetTitleBundle/Resources/translations"
+
+fos_elastica:
+    indexes:
+        widgets:
+            types:
+                Title:
+                    mappings:
+                        content: ~
