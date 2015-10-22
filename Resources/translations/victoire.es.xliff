@@ -22,6 +22,10 @@
         <source>widget_title.form.headingStyle.label</source>
         <target>Estilo</target>
       </trans-unit>
+      <trans-unit resname="widget_title.form.content.label">
+        <source>widget_title.form.content.label</source>
+        <target>Propiedad usada para representar el título</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
