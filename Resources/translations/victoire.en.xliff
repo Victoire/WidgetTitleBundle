@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -8,23 +8,19 @@
     <body>
       <trans-unit resname="widget.textTitle.new.action.label">
         <source>widget.textTitle.new.action.label</source>
-        <target>Text Title</target>
+        <target><![CDATA[Title & headings]]></target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.textTitle.label">
         <source>modal.form.widget.type.textTitle.label</source>
-        <target>Text Title</target>
+        <target><![CDATA[Title & headings]]></target>
       </trans-unit>
       <trans-unit resname="widget_title.form.headingLevel.label">
         <source>widget_title.form.headingLevel.label</source>
-        <target>Semantical level</target>
+        <target>Heading level</target>
       </trans-unit>
       <trans-unit resname="widget_title.form.headingStyle.label">
         <source>widget_title.form.headingStyle.label</source>
-        <target>Style level</target>
-      </trans-unit>
-      <trans-unit resname="widget_title.form.content.label">
-        <source>widget_title.form.content.label</source>
-        <target>Property to render</target>
+        <target>Style</target>
       </trans-unit>
     </body>
   </file>

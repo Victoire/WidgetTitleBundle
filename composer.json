@@ -1,18 +1,18 @@
 {
     "name": "friendsofvictoire/title-widget",
     "type": "symfony-bundle",
-    "description": "Victoire Cms Title component",
-    "keywords": ["cms", "victoire", "title", "widget"],
-    "homepage": "http://appventus.com",
+    "description": "Victoire DCMS Title widget",
+    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "Title"],
+    "homepage": "http://victoire.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Paul Andrieux",
-            "email": "paul@appventus.com"
+            "email": "paul@victoire.io"
         },
         {
             "name": "Leny Bernard",
-            "email": "leny@appventus.com"
+            "email": "leny@victoire.io"
         }
     ],
     "require": {
