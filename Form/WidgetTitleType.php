@@ -16,7 +16,6 @@ class WidgetTitleType extends WidgetTextType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-
         $builder->add('headingLevel', 'choice', [
             'choices' => [
                 'h1' => 'H1',
