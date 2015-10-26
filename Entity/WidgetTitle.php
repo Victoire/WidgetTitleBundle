@@ -39,6 +39,7 @@ class WidgetTitle extends WidgetText
     /**
      * To String function
      * Used in render choices type (Especially in VictoireThemeRenderBundle).
+     *
      * @todo Check the generated value and make it more consistent
      *
      * @return string

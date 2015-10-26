@@ -24,20 +24,20 @@ class WidgetTitleType extends WidgetTextType
                 'h3' => 'H3',
                 'h4' => 'H4',
                 'h5' => 'H5',
-                'h6' => 'H6'
+                'h6' => 'H6',
             ],
             'label' => 'widget_title.form.headingLevel.label',
         ])
         ->add('headingStyle', 'choice', [
-            'label' => 'widget_title.form.headingStyle.label',
+            'label'       => 'widget_title.form.headingStyle.label',
             'empty_value' => 'Défaut',
-            'choices' => [
+            'choices'     => [
                 'h1' => 'H1',
                 'h2' => 'H2',
                 'h3' => 'H3',
                 'h4' => 'H4',
                 'h5' => 'H5',
-                'h6' => 'H6'
+                'h6' => 'H6',
             ],
         ]);
         parent::buildForm($builder, $options);
@@ -55,7 +55,7 @@ class WidgetTitleType extends WidgetTextType
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\TitleBundle\Entity\WidgetTitle',
             'widget'             => 'Title',
-            'translation_domain' => 'victoire'
+            'translation_domain' => 'victoire',
         ]);
     }
 
