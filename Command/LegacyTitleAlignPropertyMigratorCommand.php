@@ -1,8 +1,8 @@
 <?php
+
 namespace Victoire\Widget\TitleBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use Symfony\Component\Console\Helper\HelperInterface;
 use Symfony\Component\Console\Helper\ProgressHelper;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -11,7 +11,7 @@ use Victoire\Widget\TitleBundle\Entity\WidgetTitle;
 class LegacyTitleAlignPropertyMigratorCommand extends ContainerAwareCommand
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function configure()
     {
@@ -23,7 +23,8 @@ class LegacyTitleAlignPropertyMigratorCommand extends ContainerAwareCommand
     }
 
     /**
-     * Get all links and transform page relation into viewReference
+     * Get all links and transform page relation into viewReference.
+     *
      * @param InputInterface  $input
      * @param OutputInterface $output
      *
@@ -39,15 +40,15 @@ class LegacyTitleAlignPropertyMigratorCommand extends ContainerAwareCommand
         $entityManager = $this->getContainer()->get('doctrine.orm.entity_manager');
 
         /** @var WidgetTitle[] $widgetTitles */
-        $widgetTitles = $entityManager->getRepository("Victoire\\Widget\\TitleBundle\\Entity\\WidgetTitle")->findAll();
+        $widgetTitles = $entityManager->getRepository('Victoire\\Widget\\TitleBundle\\Entity\\WidgetTitle')->findAll();
 
         $progress->start($output, count($widgetTitles));
         $counter = 0;
         foreach ($widgetTitles as $widget) {
             $progress->advance();
-            if ($widget->getTextAlign() != $widget->getAlign() && $widget->getAlign() != "") {
+            if ($widget->getTextAlign() != $widget->getAlign() && $widget->getAlign() != '') {
                 $widget->setTextAlign($widget->getAlign());
-                $widget->setAlign("");
+                $widget->setAlign('');
                 $counter++;
             }
         }

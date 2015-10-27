@@ -8,15 +8,15 @@
     <body>
       <trans-unit resname="widget.title.new.action.label">
         <source>widget.title.new.action.label</source>
-        <target>Titre</target>
+        <target>Titre HTML</target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.title.label">
         <source>modal.form.widget.type.title.label</source>
-        <target>Titre</target>
+        <target>Titre HTML</target>
       </trans-unit>
       <trans-unit resname="widget_title.form.headingLevel.label">
         <source>widget_title.form.headingLevel.label</source>
-        <target>Niveau sémantique</target>
+        <target>Niveau hiérarchique</target>
       </trans-unit>
       <trans-unit resname="widget_title.form.headingStyle.label">
         <source>widget_title.form.headingStyle.label</source>
@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit resname="widget_title.form.content.label">
         <source>widget_title.form.content.label</source>
-        <target>Proprieté utilisée pour représenter le titre</target>
+        <target>Propriété utilisée pour représenter le titre</target>
       </trans-unit>
     </body>
   </file>

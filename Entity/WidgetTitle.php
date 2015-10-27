@@ -6,14 +6,13 @@ use Doctrine\ORM\Mapping as ORM;
 use Victoire\Widget\TextBundle\Entity\WidgetText;
 
 /**
- * WidgetText
+ * WidgetText.
  *
  * @ORM\Table("vic_widget_title")
  * @ORM\Entity
  */
 class WidgetTitle extends WidgetText
 {
-
     /**
      * @var string
      *
@@ -30,6 +29,7 @@ class WidgetTitle extends WidgetText
 
     /**
      * @deprecated This should not be used anymore, use instead the WidgetStylize Trait
+     *
      * @var string
      *
      * @ORM\Column(name="align", type="string", length=255, nullable=true)
@@ -38,18 +38,20 @@ class WidgetTitle extends WidgetText
 
     /**
      * To String function
-     * Used in render choices type (Especially in VictoireThemeRenderBundle)
+     * Used in render choices type (Especially in VictoireThemeRenderBundle).
+     *
      * @todo Check the generated value and make it more consistent
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
-        return 'Titre #'.$this->id. ' - '.$this->getContent();
+        return 'Titre #'.$this->id.' - '.$this->getContent();
     }
 
     /**
-     * Set headingLevel
+     * Set headingLevel.
+     *
      * @param string $headingLevel The value to set to headingLevel
      *
      * @return headingLevel
@@ -62,7 +64,7 @@ class WidgetTitle extends WidgetText
     }
 
     /**
-     * Get headingLevel
+     * Get headingLevel.
      *
      * @return string The headingLevel value
      */
@@ -72,7 +74,8 @@ class WidgetTitle extends WidgetText
     }
 
     /**
-     * Set headingStyle
+     * Set headingStyle.
+     *
      * @param string $headingStyle The value to set to headingStyle
      *
      * @return WidgetTitle
@@ -85,7 +88,7 @@ class WidgetTitle extends WidgetText
     }
 
     /**
-     * Get headingStyle
+     * Get headingStyle.
      *
      * @return string The headingStyle value
      */
@@ -95,7 +98,8 @@ class WidgetTitle extends WidgetText
     }
 
     /**
-     * Get align
+     * Get align.
+     *
      * @deprecated This should not be used anymore, use instead the WidgetStylize Trait
      *
      * @return string
@@ -106,8 +110,10 @@ class WidgetTitle extends WidgetText
     }
 
     /**
-     * Set align
+     * Set align.
+     *
      * @deprecated This should not be used anymore, use instead the WidgetStylize Trait
+     *
      * @param string $align
      *
      * @return WidgetTitle
