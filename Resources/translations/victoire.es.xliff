@@ -8,11 +8,11 @@
     <body>
       <trans-unit resname="widget.textTitle.new.action.label">
         <source>widget.textTitle.new.action.label</source>
-        <target>Encabezados HTML</target>
+        <target>Encabezados</target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.textTitle.label">
         <source>modal.form.widget.type.textTitle.label</source>
-        <target>Encabezados HTML</target>
+        <target>Encabezados</target>
       </trans-unit>
       <trans-unit resname="widget_title.form.headingLevel.label">
         <source>widget_title.form.headingLevel.label</source>
