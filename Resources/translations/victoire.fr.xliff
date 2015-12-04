@@ -8,11 +8,11 @@
     <body>
       <trans-unit resname="widget.title.new.action.label">
         <source>widget.title.new.action.label</source>
-        <target>Titre HTML</target>
+        <target>Titre</target>
       </trans-unit>
       <trans-unit resname="modal.form.widget.type.title.label">
         <source>modal.form.widget.type.title.label</source>
-        <target>Titre HTML</target>
+        <target>Titre</target>
       </trans-unit>
       <trans-unit resname="widget_title.form.headingLevel.label">
         <source>widget_title.form.headingLevel.label</source>
