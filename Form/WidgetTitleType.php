@@ -24,6 +24,7 @@ class WidgetTitleType extends WidgetTextType
                 'h4' => 'H4',
                 'h5' => 'H5',
                 'h6' => 'H6',
+                'div'=> 'widget_title.form.headingLevel.choice.undefined',
             ],
             'label' => 'widget_title.form.headingLevel.label',
         ])
@@ -31,12 +32,13 @@ class WidgetTitleType extends WidgetTextType
             'label'       => 'widget_title.form.headingStyle.label',
             'empty_value' => 'Défaut',
             'choices'     => [
-                'h1' => 'H1',
-                'h2' => 'H2',
-                'h3' => 'H3',
-                'h4' => 'H4',
-                'h5' => 'H5',
-                'h6' => 'H6',
+                'h1'               => 'H1',
+                'h2'               => 'H2',
+                'h3'               => 'H3',
+                'h4'               => 'H4',
+                'h5'               => 'H5',
+                'h6'               => 'H6',
+                'unstyled-heading' => 'widget_title.form.headingStyle.choice.no',
             ],
         ]);
         parent::buildForm($builder, $options);

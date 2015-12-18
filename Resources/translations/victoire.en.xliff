@@ -26,6 +26,14 @@
         <source>widget_title.form.content.label</source>
         <target>Property to render</target>
       </trans-unit>
+      <trans-unit resname="widget_title.form.headingLevel.choice.undefined">
+        <source>widget_title.form.headingLevel.choice.undefined</source>
+        <target>Nothing</target>
+      </trans-unit>
+      <trans-unit resname="widget_title.form.headingStyle.choice.no">
+        <source>widget_title.form.headingStyle.choice.no</source>
+        <target>Unstyled</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -26,6 +26,14 @@
         <source>widget_title.form.content.label</source>
         <target>Propriété utilisée pour représenter le titre</target>
       </trans-unit>
+      <trans-unit resname="widget_title.form.headingLevel.choice.undefined">
+        <source>widget_title.form.headingLevel.choice.undefined</source>
+        <target>Aucune sémantique</target>
+      </trans-unit>
+      <trans-unit resname="widget_title.form.headingStyle.choice.no">
+        <source>widget_title.form.headingStyle.choice.no</source>
+        <target>Aucun style</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

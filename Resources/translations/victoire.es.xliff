@@ -26,6 +26,14 @@
         <source>widget_title.form.content.label</source>
         <target>Propiedad usada para representar el título</target>
       </trans-unit>
+      <trans-unit resname="widget_title.form.headingLevel.choice.undefined">
+        <source>widget_title.form.headingLevel.choice.undefined</source>
+        <target>Ningun</target>
+      </trans-unit>
+      <trans-unit resname="widget_title.form.headingStyle.choice.no">
+        <source>widget_title.form.headingStyle.choice.no</source>
+        <target>Ningun</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
