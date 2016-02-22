@@ -1,19 +1,17 @@
 {
-    "name"             : "friendsofvictoire/title-widget",
-    "type"             : "symfony-bundle",
-    "description"      : "Victoire DCMS Title widget",
-    "keywords"         : [
+    "name": "friendsofvictoire/title-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire DCMS Title widget",
+    "keywords": [
         "DCMS",
         "Victoire",
         "widget",
         "FriendsofVictoire",
-        "Dynamic",
         "CMS",
         "Title"
     ],
-    "homepage"         : "http://victoire.io",
-    "license"          : "MIT",
-    "authors"          : [
+    "license": "MIT",
+    "authors": [
         {
             "name" : "Paul Andrieux",
             "email": "paul@victoire.io"
@@ -23,20 +21,20 @@
             "email": "leny@victoire.io"
         }
     ],
-    "require"          : {
-        "php"                          : ">=5.3.3",
-        "symfony/framework-bundle"     : "~2.3",
-        "victoire/victoire"            : "~1.3",
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/framework-bundle": "~2.8|~3.0",
+        "victoire/victoire": "~1.5",
         "friendsofvictoire/text-widget": "1.3.x-dev"
     },
-    "autoload"         : {
+    "autoload": {
         "psr-0": {
             "Victoire\\Widget\\TitleBundle": ""
         }
     },
     "minimum-stability": "dev",
-    "target-dir"       : "Victoire/Widget/TitleBundle",
-    "extra"            : {
+    "target-dir": "Victoire/Widget/TitleBundle",
+    "extra": {
         "branch-alias": {
             "dev-master": "1.3.x-dev"
         }

@@ -3,7 +3,8 @@
 namespace Victoire\Widget\TitleBundle\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Widget\TextBundle\Form\WidgetTextType;
 
 class WidgetTitleType extends WidgetTextType
@@ -16,57 +17,45 @@ class WidgetTitleType extends WidgetTextType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('headingLevel', 'choice', [
+        $builder->add('headingLevel', ChoiceType::class, [
             'choices' => [
-                'h1' => 'H1',
-                'h2' => 'H2',
-                'h3' => 'H3',
-                'h4' => 'H4',
-                'h5' => 'H5',
-                'h6' => 'H6',
-                'div'=> 'widget_title.form.headingLevel.choice.undefined',
+                'H1'                                              => 'h1',
+                'H2'                                              => 'h2',
+                'H3'                                              => 'h3',
+                'H4'                                              => 'h4',
+                'H5'                                              => 'h5',
+                'H6'                                              => 'h6',
+                'widget_title.form.headingLevel.choice.undefined' => 'div',
             ],
             'label' => 'widget_title.form.headingLevel.label',
         ])
-        ->add('headingStyle', 'choice', [
+        ->add('headingStyle', ChoiceType::class, [
             'label'       => 'widget_title.form.headingStyle.label',
-            'empty_value' => 'Défaut',
+            'empty_value' => 'widget_title.form.headingStyle.choice.placeholder',
             'choices'     => [
-                'h1'               => 'H1',
-                'h2'               => 'H2',
-                'h3'               => 'H3',
-                'h4'               => 'H4',
-                'h5'               => 'H5',
-                'h6'               => 'H6',
-                'unstyled-heading' => 'widget_title.form.headingStyle.choice.no',
+                'H1'                                       => 'h1',
+                'H2'                                       => 'h2',
+                'H3'                                       => 'h3',
+                'H4'                                       => 'h4',
+                'H5'                                       => 'h5',
+                'H6'                                       => 'h6',
+                'widget_title.form.headingStyle.choice.no' => 'unstyled-heading',
             ],
         ]);
         parent::buildForm($builder, $options);
     }
 
     /**
-     * bind form to WidgetText entity.
-     *
-     * @param OptionsResolverInterface $resolver
+     * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        parent::setDefaultOptions($resolver);
+        parent::configureOptions($resolver);
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\TitleBundle\Entity\WidgetTitle',
             'widget'             => 'Title',
             'translation_domain' => 'victoire',
         ]);
-    }
-
-    /**
-     * get form name.
-     *
-     * @return string The form name
-     */
-    public function getName()
-    {
-        return 'victoire_widget_form_title';
     }
 }

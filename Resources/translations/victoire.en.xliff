@@ -34,6 +34,10 @@
         <source>widget_title.form.headingStyle.choice.no</source>
         <target>Unstyled</target>
       </trans-unit>
+      <trans-unit resname="widget_title.form.headingStyle.choice.placeholder">
+        <source>widget_title.form.headingStyle.choice.placeholder</source>
+        <target>Placeholder</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
