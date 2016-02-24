@@ -22,10 +22,8 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "symfony/framework-bundle": "~2.8|~3.0",
         "victoire/victoire": "~1.5",
-        "friendsofvictoire/text-widget": "1.3.x-dev"
+        "friendsofvictoire/text-widget": "~1.5"
     },
     "autoload": {
         "psr-0": {
@@ -36,7 +34,7 @@
     "target-dir": "Victoire/Widget/TitleBundle",
     "extra": {
         "branch-alias": {
-            "dev-master": "1.3.x-dev"
+            "dev-master": "1.5.x-dev"
         }
     }
 }
