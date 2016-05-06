@@ -19,12 +19,12 @@ class WidgetTitleType extends WidgetTextType
     {
         $builder->add('headingLevel', ChoiceType::class, [
             'choices' => [
-                'H1'                                              => 'h1',
-                'H2'                                              => 'h2',
-                'H3'                                              => 'h3',
-                'H4'                                              => 'h4',
-                'H5'                                              => 'h5',
-                'H6'                                              => 'h6',
+                'h1'                                              => 'h1',
+                'h2'                                              => 'h2',
+                'h3'                                              => 'h3',
+                'h4'                                              => 'h4',
+                'h5'                                              => 'h5',
+                'h6'                                              => 'h6',
                 'widget_title.form.headingLevel.choice.undefined' => 'div',
             ],
             'label' => 'widget_title.form.headingLevel.label',
@@ -33,12 +33,12 @@ class WidgetTitleType extends WidgetTextType
             'label'       => 'widget_title.form.headingStyle.label',
             'empty_value' => 'widget_title.form.headingStyle.choice.placeholder',
             'choices'     => [
-                'H1'                                       => 'h1',
-                'H2'                                       => 'h2',
-                'H3'                                       => 'h3',
-                'H4'                                       => 'h4',
-                'H5'                                       => 'h5',
-                'H6'                                       => 'h6',
+                'h1'                                       => 'h1',
+                'h2'                                       => 'h2',
+                'h3'                                       => 'h3',
+                'h4'                                       => 'h4',
+                'h5'                                       => 'h5',
+                'h6'                                       => 'h6',
                 'widget_title.form.headingStyle.choice.no' => 'unstyled-heading',
             ],
         ]);
