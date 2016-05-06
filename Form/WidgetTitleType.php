@@ -2,8 +2,8 @@
 
 namespace Victoire\Widget\TitleBundle\Form;
 
-use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Widget\TextBundle\Form\WidgetTextType;
 
