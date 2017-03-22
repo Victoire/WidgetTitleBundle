@@ -1,14 +1,11 @@
 {
-    "name": "friendsofvictoire/title-widget",
+    "name": "victoire/title-widget",
     "type": "symfony-bundle",
-    "description": "Victoire DCMS Title widget",
+    "description": "Victoire Title widget",
     "keywords": [
-        "DCMS",
         "Victoire",
-        "widget",
-        "FriendsofVictoire",
-        "CMS",
-        "Title"
+        "Title",
+        "Widget"
     ],
     "license": "MIT",
     "authors": [
@@ -22,8 +19,8 @@
         }
     ],
     "require": {
-        "victoire/victoire": ">=2.0.0",
-        "friendsofvictoire/text-widget": ">=2.0.0"
+        "victoire/victoire": "~2.3"
+        "victoire/text-widget": "~2.0"
     },
     "autoload": {
         "psr-0": {
