@@ -1,4 +1,4 @@
-Victoire DCMS Title Bundle
+Victoire Title Bundle
 ============
 
 ## What is the purpose of this bundle
