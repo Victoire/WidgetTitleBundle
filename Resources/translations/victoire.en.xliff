@@ -6,35 +6,35 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit resname="widget.title.new.action.label">
+      <trans-unit resname="widget.title.new.action.label" id="58dcf2b9b6bc0">
         <source>widget.title.new.action.label</source>
         <target><![CDATA[Title & headings]]></target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.title.label">
+      <trans-unit resname="modal.form.widget.type.title.label" id="58dcf2b9b6bf1">
         <source>modal.form.widget.type.title.label</source>
         <target><![CDATA[Title & headings]]></target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingLevel.label">
+      <trans-unit resname="widget_title.form.headingLevel.label" id="58dcf2b9b6c0a">
         <source>widget_title.form.headingLevel.label</source>
         <target>Heading level</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingStyle.label">
+      <trans-unit resname="widget_title.form.headingStyle.label" id="58dcf2b9b6c22">
         <source>widget_title.form.headingStyle.label</source>
         <target>Style</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.content.label">
+      <trans-unit resname="widget_title.form.content.label" id="58dcf2b9b6c42">
         <source>widget_title.form.content.label</source>
         <target>Property to render</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingLevel.choice.undefined">
+      <trans-unit resname="widget_title.form.headingLevel.choice.undefined" id="58dcf2b9b6c6a">
         <source>widget_title.form.headingLevel.choice.undefined</source>
         <target>Nothing</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingStyle.choice.no">
+      <trans-unit resname="widget_title.form.headingStyle.choice.no" id="58dcf2b9b6c82">
         <source>widget_title.form.headingStyle.choice.no</source>
         <target>Unstyled</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingStyle.choice.placeholder">
+      <trans-unit resname="widget_title.form.headingStyle.choice.placeholder" id="58dcf2b9b6c9a">
         <source>widget_title.form.headingStyle.choice.placeholder</source>
         <target>Placeholder</target>
       </trans-unit>
