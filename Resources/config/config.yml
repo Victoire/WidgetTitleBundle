@@ -17,4 +17,4 @@ fos_elastica:
             types:
                 Title:
                     mappings:
-                        content: ~
+                        content: { type: 'string', boost: 5 }
