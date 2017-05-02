@@ -6,35 +6,35 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit resname="widget.title.new.action.label">
+      <trans-unit resname="widget.title.new.action.label" id="5908acf2046d2">
         <source>widget.title.new.action.label</source>
         <target>Titre</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.title.label">
+      <trans-unit resname="modal.form.widget.type.title.label" id="5908acf2046ec">
         <source>modal.form.widget.type.title.label</source>
         <target>Titre</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingLevel.label">
+      <trans-unit resname="widget_title.form.headingLevel.label" id="5908acf204706">
         <source>widget_title.form.headingLevel.label</source>
         <target>Niveau hiérarchique</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingStyle.label">
+      <trans-unit resname="widget_title.form.headingStyle.label" id="5908acf20471f">
         <source>widget_title.form.headingStyle.label</source>
         <target>Style</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.content.label">
+      <trans-unit resname="widget_title.form.content.label" id="5908acf20476a">
         <source>widget_title.form.content.label</source>
         <target>Propriété utilisée pour représenter le titre</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingLevel.choice.undefined">
+      <trans-unit resname="widget_title.form.headingLevel.choice.undefined" id="5908acf204782">
         <source>widget_title.form.headingLevel.choice.undefined</source>
         <target>Aucune sémantique</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingStyle.choice.no">
+      <trans-unit resname="widget_title.form.headingStyle.choice.no" id="5908acf2047b4">
         <source>widget_title.form.headingStyle.choice.no</source>
         <target>Aucun style</target>
       </trans-unit>
-      <trans-unit resname="widget_title.form.headingStyle.choice.placeholder">
+      <trans-unit resname="widget_title.form.headingStyle.choice.placeholder" id="5908acf2047ee">
         <source>widget_title.form.headingStyle.choice.placeholder</source>
         <target>Défaut</target>
       </trans-unit>
