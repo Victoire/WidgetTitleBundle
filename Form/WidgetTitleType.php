@@ -31,7 +31,7 @@ class WidgetTitleType extends WidgetTextType
         ])
         ->add('headingStyle', ChoiceType::class, [
             'label'       => 'widget_title.form.headingStyle.label',
-            'empty_value' => 'widget_title.form.headingStyle.choice.placeholder',
+            'empty_data' => 'widget_title.form.headingStyle.choice.placeholder',
             'choices'     => [
                 'h1'                                       => 'h1',
                 'h2'                                       => 'h2',
