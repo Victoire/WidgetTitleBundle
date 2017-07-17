@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "victoire/victoire": "~2.3 | ~3.0",
+        "victoire/victoire": "~2.2 | ~2.3 | ~3.0",
         "victoire/text-widget": "~2.0 | ~3.0"
     },
     "autoload": {
